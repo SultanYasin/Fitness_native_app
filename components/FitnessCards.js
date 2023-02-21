@@ -16,7 +16,7 @@ export default function FitnessCards() {
         </Pressable>;
       })}
 
-      <Text>FitnessCards</Text>
+      <Text>FitnessCardsxxxxxx</Text>
     </View>
   );
 }
