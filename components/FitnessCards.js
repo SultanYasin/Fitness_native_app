@@ -5,17 +5,18 @@ import fitness from "../data/fitness";
 export default function FitnessCards() {
   const fitnessData = fitness;
 
-  console.log({...fitnessData})
+  console.log({ ...fitnessData });
 
   return (
     <View>
+        <Text>FitnessCards</Text>
       {fitnessData.map((item, key) => {
         <Pressable key={key} style={styles.pressable}>
-          <Image source={{ uri: item.image }} style={styles.cardImage} />
+          <Image source={{ uri: item.name }} style={styles.cardImage} />
         </Pressable>;
       })}
 
-      <Text>FitnessCards00000000</Text>
+      <Text>FitnessCards</Text>
     </View>
   );
 }
