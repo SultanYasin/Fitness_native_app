@@ -9,15 +9,13 @@ export default function FitnessCards() {
 
   return (
     <View>
-        <Text>FitnessCards</Text>
-      {fitnessData.map((item, key) => {
-        <Pressable key={key} style={styles.pressable}>
-          <Image source={{ uri: item.name }} style={styles.cardImage} />
-        </Pressable>;
-      })}
-
-      <Text>FitnessCards</Text>
+      {fitness.map((item) => (
+        <Pressable key={item.id} style={styles.pressable}>
+          <Image source={{ uri: item.image }} style={styles.cardImage} />
+        </Pressable>
+      ))}
     </View>
+    
   );
 }
 
